@@ -5,7 +5,6 @@
 import random
 import operator
 import time
-from playsound import playsound
 
 operations = {"+": operator.add, "-": operator.sub,
               "*": operator.mul, "%": operator.mod}
@@ -47,7 +46,6 @@ while True:
                     print("Zadana hodnota neni cislo!")
 
         current_timer = time.time() - t
-        playsound("get_out.mp3")
         print(f"""\n-------------------------------------------
         Gratuluji, zodpovedel jsi vsechny otazky spravne za {current_timer:.2f}s""")
         break
